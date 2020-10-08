@@ -24,11 +24,11 @@ def main():
 
     # select street
     questions = [
-        inquirer.List("name", choices=street_choices, message="Select address")
+        inquirer.List("address", choices=street_choices, message="Select address")
     ]
-    name = inquirer.prompt(questions).get("name")
+    address = inquirer.prompt(questions).get("address")
     for street in data:
-        if street["name"] == name:
+        if street["name"] == address:
             agreement=street["agreementGuid"] 
 
     print("Copy the following statements into your configuration.yaml:\n")
@@ -37,7 +37,7 @@ def main():
     print("  sources:")
     print("    - name: hra_no")
     print("      args:")
-    print(f"        name: {name}")
+    print(f"        address: {address}")
     print(f"        agreement: {agreement}")
 
 
