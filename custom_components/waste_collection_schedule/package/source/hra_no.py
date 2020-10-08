@@ -10,20 +10,18 @@ import arrow
 
 DESCRIPTION = "Schedule from Hadeland og Ringerike Avfallsselskap AS - hra.no"
 URL = "https://hra.no"
-TEST_CASES = OrderedDict([("Biliberget", 
-{"agreement":"aa6f7f45-d88e-400b-882f-b02050db1735",
-"address":"Biliberget 7, 3530 RØYSE"
-})])
+TEST_CASES = OrderedDict([("HRA", ({
+    "agreement": "8d583eb5-7e38-43b9-88be-1440aad55b35"
+}))])
 
 class Source:
-    def __init__(self, agreement=None, address=None):
+    def __init__(self, agreement=None):
         self._agreement = agreement
-        self._address = address
 
     def fetch(self):
         rooturl='https://hra.no/tommekalender/'
 
-        enc_params = urllib.parse.urlencode({'agreement': self._agreement, 'query': self._address})
+        enc_params = urllib.parse.urlencode({'agreement': self._agreement})
 
         req = Request(rooturl+'?'+enc_params)
 

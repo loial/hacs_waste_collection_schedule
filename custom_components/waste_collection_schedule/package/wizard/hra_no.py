@@ -7,7 +7,7 @@ from html.parser import HTMLParser
 
 
 def main():
-    Print("Garbage collection agreement lookup for 'Hadeland og Ringerike Avfallsselskap AS'")
+    print("Garbage collection agreement lookup for 'Hadeland og Ringerike Avfallsselskap AS'")
     # search for street
     questions = [inquirer.Text("query", message="Enter search string for street")]
     answers = inquirer.prompt(questions)
@@ -37,7 +37,6 @@ def main():
     print("  sources:")
     print("    - name: hra_no")
     print("      args:")
-    print(f"        address: {address}")
     print(f"        agreement: {agreement}")
 
 

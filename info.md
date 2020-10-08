@@ -28,6 +28,7 @@ Alternative details view showing the list of appointment types and their next ev
 
 Currently the following service providers are supported:
 
+German:
 - [Abfall.IO / AbfallPlus.de](./doc/source/abfall_io.md)
 - [Abfall_Kreis_Tuebingen.de](./doc/source/abfall_kreis_tuebingen_de.md)
 - [AbfallNavi (RegioIT.de)](./doc/source/abfallnavi_de.md)
@@ -39,3 +40,6 @@ Currently the following service providers are supported:
 - [Muellmax.de](./doc/source/muellmax_de.md)
 - [RegioIT.de / AbfallNavi [deprecated]](./doc/source/regioit_de.md)
 - [Stadtreinigung.Hamburg](./doc/source/stadtreinigung_hamburg.md)
+
+Norwegian:
+- [HRA - Hadeland og Ringerike](./doc/source/hra_no.md)
