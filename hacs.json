@@ -1,5 +1,5 @@
 {
-  "name": "Waste Collection Schedule",
+  "name": "Waste Collection Schedule (git)",
   "domains": ["sensor"],
   "iot_class": "cloud_polling"
 }
